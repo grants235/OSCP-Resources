@@ -4,7 +4,6 @@
 
 - Nmap
   ``` 
-  
   nmap -sC -sV <ip>
   ```
 - Gobster
@@ -33,4 +32,28 @@
   ```
   sudo -l 
   > then use https://gtfobins.github.io
+  ```
+- Cron
+  ```
+  cat /etc/crontab
+  > Look for jobs and files that are being ran
+  > Also look for the PATH variable to see if there is any realtive directory files and a path directory you can write to
+  ```
+- SUID 
+  ```
+  find / -type f -a \( -perm -u+s -o -perm -g+s \) -exec ls -l {} \; 2> /dev/null
+  > Look for know exploits, Shared Object Injection, and /usr/bin/systemctl
+  ```
+- Command History 
+  ```
+  cat ~/.*history | less
+  ```
+- Config files
+  ```
+  ls -la /home/<user>/
+  > Look for .ssh and other config-type filese that could contain password or hashes
+  ```
+- Kernel Exploits
+  ```
+  uname -a
   ```
