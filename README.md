@@ -69,3 +69,10 @@
   ```
   uname -a
   ```
+
+## Other
+
+- Other People Lists
+  ```
+  https://medium.com/oscp-cheatsheet/oscp-cheatsheet-6c80b9fa8d7e
+  ```
