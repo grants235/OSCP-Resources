@@ -32,6 +32,7 @@
 - Service Exploit
   ```
   service --status-all
+  pstree
   ```
 - File permissions
   ```
