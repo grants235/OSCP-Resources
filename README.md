@@ -1,4 +1,4 @@
-# OSCP
+# OSCP Cheatsheet
 
 ## Enumeration Tools
 
