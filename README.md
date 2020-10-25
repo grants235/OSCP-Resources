@@ -71,6 +71,18 @@
   uname -a
   ```
 
+## Cracking Hashes and Brute Forcing
+  - SSH Password
+  ```
+  hydra -l <username> -P <wordlist> ssh://<ip>
+  ```
+  - SSH Hash
+  ``` 
+  python ssh2john.py ~/.ssh/id_rsa > ~/.ssh/id_rsa.hash
+  john --wordlist=<wordlist> ~/.ssh/id_rsa.hash
+  ```
+  - Website credentials
+
 ## Other
 
 - Other People Lists
