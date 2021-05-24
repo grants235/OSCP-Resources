@@ -26,6 +26,10 @@
   ```
   nc -lvnp <port>
   ```
+- Upgrade nc shell to full tty
+ ```
+ python -c 'import pty; pty.spawn("/bin/bash")'
+ ```
 
 ## Privilege Esclation
 
